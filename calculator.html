@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>simple calc</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<div class="container">
+		<div class="calculator">
+		<form>
+			<div class="results"> 
+				<input type="text" name="results">
+			</div>
+			<div>
+				<input type="button" value="CLEAR"onclick="results.value = '' ">
+				<input type="button" value="DEL"onclick="results.value =results.value.toString().slice(0,-1) ">
+				<input type="button" value="-"onclick="results.value += '-' ">
+				<input type="button" value="+"onclick="results.value += '+' ">
+			</div>
+			<div>
+				<input type="button" value="1"onclick="results.value += '1' ">
+				<input type="button" value="2"onclick="results.value += '2' ">
+				<input type="button" value="3"onclick="results.value += '3' ">
+				<input type="button" value="+"onclick="results.value += '+' ">
+			</div>
+			<div>
+				<input type="button" value="4"onclick="results.value += '4' ">
+				<input type="button" value="5"onclick="results.value += '5' ">
+				<input type="button" value="6"onclick="results.value += '6' ">
+				<input type="button" value="*"onclick="results.value += '*' ">
+			</div>
+			<div>
+				<input type="button" value="7"onclick="results.value += '7' ">
+				<input type="button" value="8"onclick="results.value += '8' ">
+				<input type="button" value="9"onclick="results.value += '9' ">
+				<input type="button" value="/"onclick="results.value += '/' ">
+			</div>
+			<div>
+				<input type="button" value="0"onclick="results.value += '0' ">
+				<input type="button" value="."onclick="results.value += '.' ">
+				<input class="sign"type="button" value="="onclick="results.value= eval(results.value)">
+			</div> 
+		</form>
+		</div>
+	</div>
+</body>
+</html>
